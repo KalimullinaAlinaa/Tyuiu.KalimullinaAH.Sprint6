@@ -65,6 +65,7 @@ namespace Tyuiu.KalimullinaAH.Sprint6.Task1.V19
             MessageBox.Show("Таск 1 выполнила студентка группы ИИПб-23-1 Калимуллина Алина Халимовна", "Сообщение", MessageBoxButtons.OK);
         }
 
+        
         private void labelStopStep_KAH_Click(object sender, EventArgs e)
         {
 
