@@ -11,7 +11,7 @@ namespace Tyuiu.KalimullinaAH.Sprint6.Task0.V3.Lib
         public double Calculate(int x)
         {
             double y;
-            y = (4 * Math.Pow(x, 3)) / (Math.Pow(x, 3) - 1);
+            y = (4 * Math.Pow(x, 3)) / (Math.Pow(x,3) - 1);
             return Math.Round(y,3);
         
         }

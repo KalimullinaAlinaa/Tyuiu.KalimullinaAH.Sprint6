@@ -41,7 +41,7 @@ namespace Tyuiu.KalimullinaAH.Sprint6.Task0.V3
             }
         }
 
-private void buttonHelp_KAH_Click(object sender, EventArgs e)
+            private void buttonHelp_KAH_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Таск 0 выполнила студентка группы ИИПб-23-1 Калимуллина Алина Халимовна", "Сообщение", MessageBoxButtons.OK);
         }

@@ -15,6 +15,7 @@ namespace Tyuiu.KalimullinaAH.Sprint6.Task0.V3.Test
             double wait = 4.154;
             Assert.AreEqual(wait, res);
 
+
         }
     }
 }
