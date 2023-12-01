@@ -61,10 +61,10 @@ namespace Tyuiu.KalimullinaAH.Sprint6.Task1.V19
             this.labelTask_KAH.AutoSize = true;
             this.labelTask_KAH.Location = new System.Drawing.Point(6, 27);
             this.labelTask_KAH.Name = "labelTask_KAH";
-            this.labelTask_KAH.Size = new System.Drawing.Size(439, 48);
+            this.labelTask_KAH.Size = new System.Drawing.Size(547, 51);
             this.labelTask_KAH.TabIndex = 2;
-            this.labelTask_KAH.Text = "Протабулировать функцию Math.Cos(x) + (Math.Cos(x)) / (x + 2) - (3 * x)\r\nна задан" +
-    "ном диапазоне\r\nРезультат вывести в виде таблицы.\r\n";
+            this.labelTask_KAH.Text = "Протабулировать функцию 2 * Math.Cos(x) + 2) / (2 * x - 1)) + Math.Cos(x) - 5 * x" +
+    " + 3\r\nна заданном диапазоне\r\nРезультат вывести в виде таблицы.\r\n";
             // 
             // groupBoxInput_KAH
             // 
@@ -84,7 +84,7 @@ namespace Tyuiu.KalimullinaAH.Sprint6.Task1.V19
             this.labelStopStep_KAH.AutoSize = true;
             this.labelStopStep_KAH.Location = new System.Drawing.Point(109, 25);
             this.labelStopStep_KAH.Name = "labelStopStep_KAH";
-            this.labelStopStep_KAH.Size = new System.Drawing.Size(84, 16);
+            this.labelStopStep_KAH.Size = new System.Drawing.Size(89, 17);
             this.labelStopStep_KAH.TabIndex = 4;
             this.labelStopStep_KAH.Text = "Конец шага:";
             this.labelStopStep_KAH.Click += new System.EventHandler(this.labelStopStep_KAH_Click);
@@ -101,7 +101,7 @@ namespace Tyuiu.KalimullinaAH.Sprint6.Task1.V19
             this.labelStartStep_KAH.AutoSize = true;
             this.labelStartStep_KAH.Location = new System.Drawing.Point(6, 25);
             this.labelStartStep_KAH.Name = "labelStartStep_KAH";
-            this.labelStartStep_KAH.Size = new System.Drawing.Size(83, 16);
+            this.labelStartStep_KAH.Size = new System.Drawing.Size(87, 17);
             this.labelStartStep_KAH.TabIndex = 3;
             this.labelStartStep_KAH.Text = "Старт шага:";
             // 
@@ -150,14 +150,14 @@ namespace Tyuiu.KalimullinaAH.Sprint6.Task1.V19
             this.labelResult_KAH.AutoSize = true;
             this.labelResult_KAH.Location = new System.Drawing.Point(6, 27);
             this.labelResult_KAH.Name = "labelResult_KAH";
-            this.labelResult_KAH.Size = new System.Drawing.Size(80, 16);
+            this.labelResult_KAH.Size = new System.Drawing.Size(80, 17);
             this.labelResult_KAH.TabIndex = 1;
             this.labelResult_KAH.Text = "Результат:";
             // 
             // textBoxResult_KAH
             // 
             this.textBoxResult_KAH.Font = new System.Drawing.Font("Consolas", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBoxResult_KAH.Location = new System.Drawing.Point(6, 51);
+            this.textBoxResult_KAH.Location = new System.Drawing.Point(6, 61);
             this.textBoxResult_KAH.Multiline = true;
             this.textBoxResult_KAH.Name = "textBoxResult_KAH";
             this.textBoxResult_KAH.ReadOnly = true;
@@ -169,14 +169,15 @@ namespace Tyuiu.KalimullinaAH.Sprint6.Task1.V19
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(983, 510);
+            this.ClientSize = new System.Drawing.Size(1231, 510);
             this.Controls.Add(this.groupBoxOutPut_KAH);
             this.Controls.Add(this.buttonDone_KAH);
             this.Controls.Add(this.groupBoxInput_KAH);
             this.Controls.Add(this.buttonInfo_KAH);
             this.Controls.Add(this.groupBoxTask_KAH);
             this.Name = "FormMain";
-            this.Text = "Спринт 6 | Таск1 | Вариант 0 | Калимуллина А.Х";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Спринт 6 | Таск1 | Вариант 19 | Калимуллина А.Х";
             this.Load += new System.EventHandler(this.FormMain_Load);
             this.groupBoxTask_KAH.ResumeLayout(false);
             this.groupBoxTask_KAH.PerformLayout();
