@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2C0E1D9E-0A9A-4EC6-A2AC-A9A16B7C94C4}</ProjectGuid>
+    <ProjectGuid>{3665CA98-6225-4535-9D4C-3E423C7422C8}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Tyuiu.KalimullinaAH.Sprint6.Task0.V3</RootNamespace>
-    <AssemblyName>Tyuiu.KalimullinaAH.Sprint6.Task0.V3</AssemblyName>
+    <RootNamespace>Tyuiu.KalimullinaAH.Sprint6.Task1.V19</RootNamespace>
+    <AssemblyName>Tyuiu.KalimullinaAH.Sprint6.Task1.V19</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -31,10 +31,6 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <PropertyGroup>
-    <StartupObject>
-    </StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -69,7 +65,6 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -85,12 +80,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Untitled.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Tyuiu.KalimullinaAH.Sprint6.Task0.V3.Lib\Tyuiu.KalimullinaAH.Sprint6.Task0.V3.Lib.csproj">
-      <Project>{214d37cd-a6c3-4d0b-ab9c-e74158989b0d}</Project>
-      <Name>Tyuiu.KalimullinaAH.Sprint6.Task0.V3.Lib</Name>
+    <ProjectReference Include="..\Tyuiu.KalimullinaAH.Sprint6.Task1.V19.Lib\Tyuiu.KalimullinaAH.Sprint6.Task1.V19.Lib.csproj">
+      <Project>{c91dc8f2-d45c-4a96-a796-6cd971775075}</Project>
+      <Name>Tyuiu.KalimullinaAH.Sprint6.Task1.V19.Lib</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
