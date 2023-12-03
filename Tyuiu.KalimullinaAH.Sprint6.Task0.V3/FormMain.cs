@@ -17,7 +17,6 @@ namespace Tyuiu.KalimullinaAH.Sprint6.Task0.V3
             InitializeComponent();
         }
 
-      
 
         private void buttonDone_KAH_Click(object sender, EventArgs e)
         {
