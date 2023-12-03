@@ -169,12 +169,14 @@ namespace Tyuiu.KalimullinaAH.Sprint6.Task1.V19
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1231, 510);
+            this.ClientSize = new System.Drawing.Size(978, 490);
             this.Controls.Add(this.groupBoxOutPut_KAH);
             this.Controls.Add(this.buttonDone_KAH);
             this.Controls.Add(this.groupBoxInput_KAH);
             this.Controls.Add(this.buttonInfo_KAH);
             this.Controls.Add(this.groupBoxTask_KAH);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Спринт 6 | Таск1 | Вариант 19 | Калимуллина А.Х";

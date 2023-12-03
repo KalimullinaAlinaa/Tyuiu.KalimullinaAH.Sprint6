@@ -186,6 +186,7 @@ namespace Tyuiu.KalimullinaAH.Sprint6.Task0.V3
             this.Controls.Add(this.groupBoxTask_KAH);
             this.Controls.Add(this.buttonDone_KAH);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
