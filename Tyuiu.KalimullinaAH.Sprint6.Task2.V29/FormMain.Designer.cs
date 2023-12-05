@@ -29,9 +29,13 @@ namespace Tyuiu.KalimullinaAH.Sprint6.Task2.V29
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea10 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series10 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.groupBoxOutPut_KAH = new System.Windows.Forms.GroupBox();
+            this.chartFunction_KAH = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.dataGridViewFunction_KAH = new System.Windows.Forms.DataGridView();
+            this.X = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.F = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.labelResult_KAH = new System.Windows.Forms.Label();
             this.buttonDone_KAH = new System.Windows.Forms.Button();
             this.groupBoxInput_KAH = new System.Windows.Forms.GroupBox();
@@ -42,19 +46,17 @@ namespace Tyuiu.KalimullinaAH.Sprint6.Task2.V29
             this.buttonInfo_KAH = new System.Windows.Forms.Button();
             this.groupBoxTask_KAH = new System.Windows.Forms.GroupBox();
             this.labelTask_KAH = new System.Windows.Forms.Label();
-            this.dataGridViewFunction_KAH = new System.Windows.Forms.DataGridView();
-            this.X = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.F = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.chartFunction_KAH = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.groupBoxOutPut_KAH.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chartFunction_KAH)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFunction_KAH)).BeginInit();
             this.groupBoxInput_KAH.SuspendLayout();
             this.groupBoxTask_KAH.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFunction_KAH)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chartFunction_KAH)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBoxOutPut_KAH
             // 
+            this.groupBoxOutPut_KAH.Controls.Add(this.progressBar1);
             this.groupBoxOutPut_KAH.Controls.Add(this.chartFunction_KAH);
             this.groupBoxOutPut_KAH.Controls.Add(this.dataGridViewFunction_KAH);
             this.groupBoxOutPut_KAH.Controls.Add(this.labelResult_KAH);
@@ -64,6 +66,49 @@ namespace Tyuiu.KalimullinaAH.Sprint6.Task2.V29
             this.groupBoxOutPut_KAH.TabIndex = 7;
             this.groupBoxOutPut_KAH.TabStop = false;
             this.groupBoxOutPut_KAH.Text = "Вывод данных";
+            // 
+            // chartFunction_KAH
+            // 
+            chartArea1.Name = "ChartArea1";
+            this.chartFunction_KAH.ChartAreas.Add(chartArea1);
+            this.chartFunction_KAH.Location = new System.Drawing.Point(268, 56);
+            this.chartFunction_KAH.Name = "chartFunction_KAH";
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series1.IsVisibleInLegend = false;
+            series1.Name = "Series1";
+            this.chartFunction_KAH.Series.Add(series1);
+            this.chartFunction_KAH.Size = new System.Drawing.Size(524, 389);
+            this.chartFunction_KAH.TabIndex = 8;
+            this.chartFunction_KAH.Text = "chart1";
+            // 
+            // dataGridViewFunction_KAH
+            // 
+            this.dataGridViewFunction_KAH.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewFunction_KAH.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.X,
+            this.F});
+            this.dataGridViewFunction_KAH.Location = new System.Drawing.Point(9, 56);
+            this.dataGridViewFunction_KAH.Name = "dataGridViewFunction_KAH";
+            this.dataGridViewFunction_KAH.RowHeadersVisible = false;
+            this.dataGridViewFunction_KAH.RowHeadersWidth = 51;
+            this.dataGridViewFunction_KAH.RowTemplate.Height = 24;
+            this.dataGridViewFunction_KAH.Size = new System.Drawing.Size(253, 389);
+            this.dataGridViewFunction_KAH.TabIndex = 2;
+            // 
+            // X
+            // 
+            this.X.HeaderText = "X";
+            this.X.MinimumWidth = 6;
+            this.X.Name = "X";
+            this.X.Width = 125;
+            // 
+            // F
+            // 
+            this.F.HeaderText = "F(X)";
+            this.F.MinimumWidth = 6;
+            this.F.Name = "F";
+            this.F.Width = 125;
             // 
             // labelResult_KAH
             // 
@@ -163,48 +208,12 @@ namespace Tyuiu.KalimullinaAH.Sprint6.Task2.V29
             this.labelTask_KAH.Text = "Протабулировать функцию Math.Cos(x) + (Math.Cos(x)) / (x + 2) - (3 * x)\r\nна задан" +
     "ном диапазоне\r\nРезультат вывести в виде таблицы.\r\n";
             // 
-            // dataGridViewFunction_KAH
+            // progressBar1
             // 
-            this.dataGridViewFunction_KAH.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewFunction_KAH.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.X,
-            this.F});
-            this.dataGridViewFunction_KAH.Location = new System.Drawing.Point(9, 56);
-            this.dataGridViewFunction_KAH.Name = "dataGridViewFunction_KAH";
-            this.dataGridViewFunction_KAH.RowHeadersVisible = false;
-            this.dataGridViewFunction_KAH.RowHeadersWidth = 51;
-            this.dataGridViewFunction_KAH.RowTemplate.Height = 24;
-            this.dataGridViewFunction_KAH.Size = new System.Drawing.Size(253, 389);
-            this.dataGridViewFunction_KAH.TabIndex = 2;
-            // 
-            // X
-            // 
-            this.X.HeaderText = "X";
-            this.X.MinimumWidth = 6;
-            this.X.Name = "X";
-            this.X.Width = 125;
-            // 
-            // F
-            // 
-            this.F.HeaderText = "F(X)";
-            this.F.MinimumWidth = 6;
-            this.F.Name = "F";
-            this.F.Width = 125;
-            // 
-            // chartFunction_KAH
-            // 
-            chartArea10.Name = "ChartArea1";
-            this.chartFunction_KAH.ChartAreas.Add(chartArea10);
-            this.chartFunction_KAH.Location = new System.Drawing.Point(268, 56);
-            this.chartFunction_KAH.Name = "chartFunction_KAH";
-            series10.ChartArea = "ChartArea1";
-            series10.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series10.IsVisibleInLegend = false;
-            series10.Name = "Series1";
-            this.chartFunction_KAH.Series.Add(series10);
-            this.chartFunction_KAH.Size = new System.Drawing.Size(524, 389);
-            this.chartFunction_KAH.TabIndex = 8;
-            this.chartFunction_KAH.Text = "chart1";
+            this.progressBar1.Location = new System.Drawing.Point(428, 279);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(100, 23);
+            this.progressBar1.TabIndex = 9;
             // 
             // FormMain
             // 
@@ -221,12 +230,12 @@ namespace Tyuiu.KalimullinaAH.Sprint6.Task2.V29
             this.Text = "Спринт 6 | Таск 2 | Вариант 29 | Калимуллина А.Х";
             this.groupBoxOutPut_KAH.ResumeLayout(false);
             this.groupBoxOutPut_KAH.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chartFunction_KAH)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFunction_KAH)).EndInit();
             this.groupBoxInput_KAH.ResumeLayout(false);
             this.groupBoxInput_KAH.PerformLayout();
             this.groupBoxTask_KAH.ResumeLayout(false);
             this.groupBoxTask_KAH.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFunction_KAH)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chartFunction_KAH)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -248,6 +257,7 @@ namespace Tyuiu.KalimullinaAH.Sprint6.Task2.V29
         private System.Windows.Forms.DataGridView dataGridViewFunction_KAH;
         private System.Windows.Forms.DataGridViewTextBoxColumn X;
         private System.Windows.Forms.DataGridViewTextBoxColumn F;
+        private System.Windows.Forms.ProgressBar progressBar1;
     }
 }
 
