@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8F8132E6-4E8D-453A-9EB0-E578ED2807F1}</ProjectGuid>
+    <ProjectGuid>{3162068E-76E0-4E53-AACF-95CEF051E498}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Tyuiu.KalimullinaAH.Sprint6.Task4.V28</RootNamespace>
-    <AssemblyName>Tyuiu.KalimullinaAH.Sprint6.Task4.V28</AssemblyName>
+    <RootNamespace>Tyuiu.KalimullinaAH.Sprint6.Task5.V14</RootNamespace>
+    <AssemblyName>Tyuiu.KalimullinaAH.Sprint6.Task5.V14</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -81,9 +81,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Tyuiu.KalimullinaAH.Sprint6.Task4.V28.Lib\Tyuiu.KalimullinaAH.Sprint6.Task4.V28.Lib.csproj">
-      <Project>{77703978-4d98-4b19-a625-30ff77d91897}</Project>
-      <Name>Tyuiu.KalimullinaAH.Sprint6.Task4.V28.Lib</Name>
+    <ProjectReference Include="..\Tyuiu.KalimullinaAH.Sprint6.Task5.V14.Lib\Tyuiu.KalimullinaAH.Sprint6.Task5.V14.Lib.csproj">
+      <Project>{2a8d6301-63a6-4aea-af4e-8475f49c0290}</Project>
+      <Name>Tyuiu.KalimullinaAH.Sprint6.Task5.V14.Lib</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

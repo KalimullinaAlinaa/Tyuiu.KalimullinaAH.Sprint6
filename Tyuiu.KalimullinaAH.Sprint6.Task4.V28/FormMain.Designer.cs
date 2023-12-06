@@ -1,7 +1,7 @@
 ﻿
 namespace Tyuiu.KalimullinaAH.Sprint6.Task4.V28
 {
-    partial class Form1
+    partial class FormMain
     {
         /// <summary>
         /// Required designer variable.
@@ -41,16 +41,16 @@ namespace Tyuiu.KalimullinaAH.Sprint6.Task4.V28
             this.textBoxStartStep_KAH = new System.Windows.Forms.TextBox();
             this.buttonInfo_KAH = new System.Windows.Forms.Button();
             this.groupBoxTask_KAH = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxTask_KAH = new System.Windows.Forms.TextBox();
             this.buttonSave_KAH = new System.Windows.Forms.Button();
             this.chartResult_KAH = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.groupBoxOutPut_KAH = new System.Windows.Forms.GroupBox();
-            this.labelResult_KAH = new System.Windows.Forms.Label();
             this.textBoxResult_KAH = new System.Windows.Forms.TextBox();
+            this.labelResult_KAH = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.splitter1 = new System.Windows.Forms.Splitter();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.groupBoxInput_KAH.SuspendLayout();
             this.groupBoxTask_KAH.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartResult_KAH)).BeginInit();
@@ -133,7 +133,7 @@ namespace Tyuiu.KalimullinaAH.Sprint6.Task4.V28
             // 
             // groupBoxTask_KAH
             // 
-            this.groupBoxTask_KAH.Controls.Add(this.textBox1);
+            this.groupBoxTask_KAH.Controls.Add(this.textBoxTask_KAH);
             this.groupBoxTask_KAH.Location = new System.Drawing.Point(3, 6);
             this.groupBoxTask_KAH.Name = "groupBoxTask_KAH";
             this.groupBoxTask_KAH.Size = new System.Drawing.Size(499, 89);
@@ -141,15 +141,15 @@ namespace Tyuiu.KalimullinaAH.Sprint6.Task4.V28
             this.groupBoxTask_KAH.TabStop = false;
             this.groupBoxTask_KAH.Text = "Условие";
             // 
-            // textBox1
+            // textBoxTask_KAH
             // 
-            this.textBox1.Location = new System.Drawing.Point(6, 21);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(487, 68);
-            this.textBox1.TabIndex = 13;
-            this.textBox1.Text = "Протабулировать функцию (Math.Cos(2 * x) + (Math.Sin(x) / (x + 2.5) + 2 * x)\r\nРез" +
+            this.textBoxTask_KAH.Location = new System.Drawing.Point(6, 21);
+            this.textBoxTask_KAH.Multiline = true;
+            this.textBoxTask_KAH.Name = "textBoxTask_KAH";
+            this.textBoxTask_KAH.ReadOnly = true;
+            this.textBoxTask_KAH.Size = new System.Drawing.Size(487, 68);
+            this.textBoxTask_KAH.TabIndex = 13;
+            this.textBoxTask_KAH.Text = "Протабулировать функцию (Math.Cos(2 * x) + (Math.Sin(x) / (x + 2.5) + 2 * x)\r\nРез" +
     "ультат вывести в textBox, построить график функции и сохранить в файл OutPutFile" +
     "Task.txt по нажатию кнопки\r\n\r\n\r\n";
             // 
@@ -204,15 +204,6 @@ namespace Tyuiu.KalimullinaAH.Sprint6.Task4.V28
             this.groupBoxOutPut_KAH.TabStop = false;
             this.groupBoxOutPut_KAH.Text = "Вывод данных";
             // 
-            // labelResult_KAH
-            // 
-            this.labelResult_KAH.AutoSize = true;
-            this.labelResult_KAH.Location = new System.Drawing.Point(6, 27);
-            this.labelResult_KAH.Name = "labelResult_KAH";
-            this.labelResult_KAH.Size = new System.Drawing.Size(80, 17);
-            this.labelResult_KAH.TabIndex = 1;
-            this.labelResult_KAH.Text = "Результат:";
-            // 
             // textBoxResult_KAH
             // 
             this.textBoxResult_KAH.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -222,6 +213,15 @@ namespace Tyuiu.KalimullinaAH.Sprint6.Task4.V28
             this.textBoxResult_KAH.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.textBoxResult_KAH.Size = new System.Drawing.Size(338, 581);
             this.textBoxResult_KAH.TabIndex = 13;
+            // 
+            // labelResult_KAH
+            // 
+            this.labelResult_KAH.AutoSize = true;
+            this.labelResult_KAH.Location = new System.Drawing.Point(6, 27);
+            this.labelResult_KAH.Name = "labelResult_KAH";
+            this.labelResult_KAH.Size = new System.Drawing.Size(80, 17);
+            this.labelResult_KAH.TabIndex = 1;
+            this.labelResult_KAH.Text = "Результат:";
             // 
             // panel1
             // 
@@ -247,6 +247,14 @@ namespace Tyuiu.KalimullinaAH.Sprint6.Task4.V28
             this.panel2.Size = new System.Drawing.Size(344, 602);
             this.panel2.TabIndex = 15;
             // 
+            // splitter1
+            // 
+            this.splitter1.Location = new System.Drawing.Point(0, 0);
+            this.splitter1.Name = "splitter1";
+            this.splitter1.Size = new System.Drawing.Size(3, 602);
+            this.splitter1.TabIndex = 13;
+            this.splitter1.TabStop = false;
+            // 
             // panel3
             // 
             this.panel3.Controls.Add(this.chartResult_KAH);
@@ -256,15 +264,7 @@ namespace Tyuiu.KalimullinaAH.Sprint6.Task4.V28
             this.panel3.Size = new System.Drawing.Size(938, 602);
             this.panel3.TabIndex = 16;
             // 
-            // splitter1
-            // 
-            this.splitter1.Location = new System.Drawing.Point(0, 0);
-            this.splitter1.Name = "splitter1";
-            this.splitter1.Size = new System.Drawing.Size(3, 602);
-            this.splitter1.TabIndex = 13;
-            this.splitter1.TabStop = false;
-            // 
-            // Form1
+            // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -273,9 +273,9 @@ namespace Tyuiu.KalimullinaAH.Sprint6.Task4.V28
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.MinimumSize = new System.Drawing.Size(1300, 750);
-            this.Name = "Form1";
+            this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Спринт 6 | Таск 4 | Вариант 28 | Калимуллина А.Х ";
             this.groupBoxInput_KAH.ResumeLayout(false);
             this.groupBoxInput_KAH.PerformLayout();
             this.groupBoxTask_KAH.ResumeLayout(false);
@@ -299,7 +299,7 @@ namespace Tyuiu.KalimullinaAH.Sprint6.Task4.V28
         private System.Windows.Forms.TextBox textBoxStartStep_KAH;
         private System.Windows.Forms.Button buttonInfo_KAH;
         private System.Windows.Forms.GroupBox groupBoxTask_KAH;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBoxTask_KAH;
         private System.Windows.Forms.Button buttonSave_KAH;
         private System.Windows.Forms.DataVisualization.Charting.Chart chartResult_KAH;
         private System.Windows.Forms.GroupBox groupBoxOutPut_KAH;
