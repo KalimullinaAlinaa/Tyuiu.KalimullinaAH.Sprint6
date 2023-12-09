@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Tyuiu.KalimullinaAH.Sprint6.Task5.V14.Properties {
+namespace Tyuiu.KalimullinaAH.Sprint6.Task6.V24.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace Tyuiu.KalimullinaAH.Sprint6.Task5.V14.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Tyuiu.KalimullinaAH.Sprint6.Task5.V14.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Tyuiu.KalimullinaAH.Sprint6.Task6.V24.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -57,6 +57,36 @@ namespace Tyuiu.KalimullinaAH.Sprint6.Task5.V14.Properties {
             }
             set {
                 resourceCulture = value;
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap folder_page {
+            get {
+                object obj = ResourceManager.GetObject("folder_page", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap information {
+            get {
+                object obj = ResourceManager.GetObject("information", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap page_white_go {
+            get {
+                object obj = ResourceManager.GetObject("page_white_go", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
