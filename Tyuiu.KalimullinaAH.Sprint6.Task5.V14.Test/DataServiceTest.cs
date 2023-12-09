@@ -16,7 +16,6 @@ namespace Tyuiu.KalimullinaAH.Sprint6.Task5.V14.Test
             double[] res = ds.LoadFromDataFile(path);
 
             double[] wait = { 13,11.49,10,14.52,16,13.66,19,11,11.28 };
-
             CollectionAssert.AreEqual(wait, res);
         }
     }

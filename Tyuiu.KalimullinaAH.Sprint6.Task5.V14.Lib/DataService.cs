@@ -36,7 +36,6 @@ namespace Tyuiu.KalimullinaAH.Sprint6.Task5.V14.Lib
 
             numsArray = numsArray.Where(val => val >= 10).ToArray();
             return numsArray;
-
         }
     }
 }
