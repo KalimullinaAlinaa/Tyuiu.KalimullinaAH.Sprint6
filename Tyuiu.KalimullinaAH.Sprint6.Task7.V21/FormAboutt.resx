@@ -117,20 +117,19 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="labelTask_KAH.Text" xml:space="preserve">
-    <value>Дан файл InPutFileTask6V24.txt который может находится в любом месте на диске. 
-Загрузить файл в textBoxIn через openFileDialog. Вывести первое слово каждой строки в  результирующею строку и вывести ее в textBoxOut.</value>
+  <data name="labelInfo_KAH.Text" xml:space="preserve">
+    <value>Разработчик: Калимуллина А.Х
+
+Группа: ИИПб-23-1
+
+Программа разработана в рамках изучения языка C#
+
+Тюменский индустриальный университет (с) 2023
+
+Высшая школа цифровых технологий (с) 2023
+
+Внутреннее имя: Tyuiu.KalimullinaAH.Sprint6.Task7.V21
+
+</value>
   </data>
-  <metadata name="toolTipTask_KAH.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>242, 17</value>
-  </metadata>
-  <metadata name="openFileDialogTask_KAH.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="toolTipTask_KAH.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>242, 17</value>
-  </metadata>
-  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>88</value>
-  </metadata>
 </root>

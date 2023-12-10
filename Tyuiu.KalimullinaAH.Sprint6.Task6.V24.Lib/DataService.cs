@@ -9,7 +9,9 @@ namespace Tyuiu.KalimullinaAH.Sprint6.Task6.V24.Lib
 {
     public class DataService : ISprint6Task6V24
     {
-        public string CollectTextFromFile(string str, string path)
+    
+
+        public string CollectTextFromFile(string path)
         {
             string reStr = "";
             using (StreamReader reader = new StreamReader(path))
@@ -23,7 +25,6 @@ namespace Tyuiu.KalimullinaAH.Sprint6.Task6.V24.Lib
                 }
             }
             return reStr;
-
         }
     }
 }

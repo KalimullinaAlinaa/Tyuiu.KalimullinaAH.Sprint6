@@ -33,19 +33,19 @@ namespace Tyuiu.KalimullinaAH.Sprint6.Task6.V24
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.panelTask_KAH = new System.Windows.Forms.Panel();
             this.groupBoxTask_KAH = new System.Windows.Forms.GroupBox();
-            this.groupBoxButton_KAH = new System.Windows.Forms.GroupBox();
-            this.openFileDialogTask_KAH = new System.Windows.Forms.OpenFileDialog();
-            this.toolTipTask_KAH = new System.Windows.Forms.ToolTip(this.components);
             this.labelTask_KAH = new System.Windows.Forms.Label();
-            this.groupBoxResult_KAH = new System.Windows.Forms.GroupBox();
-            this.groupBoxLoadFile_KAH = new System.Windows.Forms.GroupBox();
-            this.textBoxLoadFile_KAH = new System.Windows.Forms.TextBox();
-            this.textBoxResult_KAH = new System.Windows.Forms.TextBox();
-            this.panelInPut_KAH = new System.Windows.Forms.Panel();
-            this.panelOutPut_KAH = new System.Windows.Forms.Panel();
+            this.groupBoxButton_KAH = new System.Windows.Forms.GroupBox();
             this.buttonHelp_KAH = new System.Windows.Forms.Button();
             this.buttonOpenFile = new System.Windows.Forms.Button();
             this.buttonDone_KAH = new System.Windows.Forms.Button();
+            this.openFileDialogTask_KAH = new System.Windows.Forms.OpenFileDialog();
+            this.toolTipTask_KAH = new System.Windows.Forms.ToolTip(this.components);
+            this.groupBoxResult_KAH = new System.Windows.Forms.GroupBox();
+            this.textBoxResult_KAH = new System.Windows.Forms.TextBox();
+            this.groupBoxLoadFile_KAH = new System.Windows.Forms.GroupBox();
+            this.textBoxLoadFile_KAH = new System.Windows.Forms.TextBox();
+            this.panelInPut_KAH = new System.Windows.Forms.Panel();
+            this.panelOutPut_KAH = new System.Windows.Forms.Panel();
             this.splitter1 = new System.Windows.Forms.Splitter();
             this.panelTask_KAH.SuspendLayout();
             this.groupBoxTask_KAH.SuspendLayout();
@@ -77,6 +77,16 @@ namespace Tyuiu.KalimullinaAH.Sprint6.Task6.V24
             this.groupBoxTask_KAH.TabStop = false;
             this.groupBoxTask_KAH.Text = "Условие";
             // 
+            // labelTask_KAH
+            // 
+            this.labelTask_KAH.AutoSize = true;
+            this.labelTask_KAH.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelTask_KAH.Location = new System.Drawing.Point(3, 18);
+            this.labelTask_KAH.Name = "labelTask_KAH";
+            this.labelTask_KAH.Size = new System.Drawing.Size(941, 34);
+            this.labelTask_KAH.TabIndex = 0;
+            this.labelTask_KAH.Text = resources.GetString("labelTask_KAH.Text");
+            // 
             // groupBoxButton_KAH
             // 
             this.groupBoxButton_KAH.Controls.Add(this.buttonHelp_KAH);
@@ -89,6 +99,50 @@ namespace Tyuiu.KalimullinaAH.Sprint6.Task6.V24
             this.groupBoxButton_KAH.TabIndex = 3;
             this.groupBoxButton_KAH.TabStop = false;
             // 
+            // buttonHelp_KAH
+            // 
+            this.buttonHelp_KAH.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonHelp_KAH.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonHelp_KAH.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonHelp_KAH.ForeColor = System.Drawing.Color.Silver;
+            this.buttonHelp_KAH.Image = global::Tyuiu.KalimullinaAH.Sprint6.Task6.V24.Properties.Resources.information;
+            this.buttonHelp_KAH.Location = new System.Drawing.Point(870, 12);
+            this.buttonHelp_KAH.Name = "buttonHelp_KAH";
+            this.buttonHelp_KAH.Size = new System.Drawing.Size(107, 70);
+            this.buttonHelp_KAH.TabIndex = 2;
+            this.buttonHelp_KAH.UseVisualStyleBackColor = true;
+            this.buttonHelp_KAH.Click += new System.EventHandler(this.buttonHelp_KAH_Click);
+            // 
+            // buttonOpenFile
+            // 
+            this.buttonOpenFile.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonOpenFile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonOpenFile.ForeColor = System.Drawing.Color.Silver;
+            this.buttonOpenFile.Image = global::Tyuiu.KalimullinaAH.Sprint6.Task6.V24.Properties.Resources.folder_page;
+            this.buttonOpenFile.Location = new System.Drawing.Point(12, 12);
+            this.buttonOpenFile.Name = "buttonOpenFile";
+            this.buttonOpenFile.Size = new System.Drawing.Size(107, 70);
+            this.buttonOpenFile.TabIndex = 0;
+            this.toolTipTask_KAH.SetToolTip(this.buttonOpenFile, "Открыть файл\r\nВыберите нужный файл для обработки\r\n");
+            this.buttonOpenFile.UseVisualStyleBackColor = true;
+            this.buttonOpenFile.Click += new System.EventHandler(this.buttonOpenFile_KAH_Click);
+            // 
+            // buttonDone_KAH
+            // 
+            this.buttonDone_KAH.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonDone_KAH.Enabled = false;
+            this.buttonDone_KAH.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonDone_KAH.ForeColor = System.Drawing.Color.Silver;
+            this.buttonDone_KAH.Image = global::Tyuiu.KalimullinaAH.Sprint6.Task6.V24.Properties.Resources.page_white_go;
+            this.buttonDone_KAH.Location = new System.Drawing.Point(141, 12);
+            this.buttonDone_KAH.Name = "buttonDone_KAH";
+            this.buttonDone_KAH.Size = new System.Drawing.Size(107, 70);
+            this.buttonDone_KAH.TabIndex = 0;
+            this.toolTipTask_KAH.SetToolTip(this.buttonDone_KAH, "Производит поиск в файле вхождений первое слово каждой строки и конкатенирует стр" +
+        "оки в которых находятся эти символы \r\n");
+            this.buttonDone_KAH.UseVisualStyleBackColor = true;
+            this.buttonDone_KAH.Click += new System.EventHandler(this.buttonDone_KAH_Click);
+            // 
             // openFileDialogTask_KAH
             // 
             this.openFileDialogTask_KAH.FileName = "openFileDialog1";
@@ -97,16 +151,6 @@ namespace Tyuiu.KalimullinaAH.Sprint6.Task6.V24
             // 
             this.toolTipTask_KAH.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
             this.toolTipTask_KAH.ToolTipTitle = "Подсказка";
-            // 
-            // labelTask_KAH
-            // 
-            this.labelTask_KAH.AutoSize = true;
-            this.labelTask_KAH.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelTask_KAH.Location = new System.Drawing.Point(3, 18);
-            this.labelTask_KAH.Name = "labelTask_KAH";
-            this.labelTask_KAH.Size = new System.Drawing.Size(922, 32);
-            this.labelTask_KAH.TabIndex = 0;
-            this.labelTask_KAH.Text = resources.GetString("labelTask_KAH.Text");
             // 
             // groupBoxResult_KAH
             // 
@@ -120,6 +164,16 @@ namespace Tyuiu.KalimullinaAH.Sprint6.Task6.V24
             this.groupBoxResult_KAH.Text = "Вывод:";
             this.groupBoxResult_KAH.Enter += new System.EventHandler(this.groupBoxResult_KAH_Enter);
             // 
+            // textBoxResult_KAH
+            // 
+            this.textBoxResult_KAH.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBoxResult_KAH.Location = new System.Drawing.Point(3, 18);
+            this.textBoxResult_KAH.Multiline = true;
+            this.textBoxResult_KAH.Name = "textBoxResult_KAH";
+            this.textBoxResult_KAH.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.textBoxResult_KAH.Size = new System.Drawing.Size(515, 404);
+            this.textBoxResult_KAH.TabIndex = 0;
+            // 
             // groupBoxLoadFile_KAH
             // 
             this.groupBoxLoadFile_KAH.Controls.Add(this.textBoxLoadFile_KAH);
@@ -130,6 +184,7 @@ namespace Tyuiu.KalimullinaAH.Sprint6.Task6.V24
             this.groupBoxLoadFile_KAH.TabIndex = 0;
             this.groupBoxLoadFile_KAH.TabStop = false;
             this.groupBoxLoadFile_KAH.Text = "Ввод:";
+            this.groupBoxLoadFile_KAH.Enter += new System.EventHandler(this.groupBoxLoadFile_KAH_Enter);
             // 
             // textBoxLoadFile_KAH
             // 
@@ -140,16 +195,6 @@ namespace Tyuiu.KalimullinaAH.Sprint6.Task6.V24
             this.textBoxLoadFile_KAH.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.textBoxLoadFile_KAH.Size = new System.Drawing.Size(456, 404);
             this.textBoxLoadFile_KAH.TabIndex = 0;
-            // 
-            // textBoxResult_KAH
-            // 
-            this.textBoxResult_KAH.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBoxResult_KAH.Location = new System.Drawing.Point(3, 18);
-            this.textBoxResult_KAH.Multiline = true;
-            this.textBoxResult_KAH.Name = "textBoxResult_KAH";
-            this.textBoxResult_KAH.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBoxResult_KAH.Size = new System.Drawing.Size(515, 404);
-            this.textBoxResult_KAH.TabIndex = 0;
             // 
             // panelInPut_KAH
             // 
@@ -168,47 +213,6 @@ namespace Tyuiu.KalimullinaAH.Sprint6.Task6.V24
             this.panelOutPut_KAH.Name = "panelOutPut_KAH";
             this.panelOutPut_KAH.Size = new System.Drawing.Size(521, 425);
             this.panelOutPut_KAH.TabIndex = 2;
-            // 
-            // buttonHelp_KAH
-            // 
-            this.buttonHelp_KAH.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonHelp_KAH.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonHelp_KAH.Image = global::Tyuiu.KalimullinaAH.Sprint6.Task6.V24.Properties.Resources.information;
-            this.buttonHelp_KAH.Location = new System.Drawing.Point(870, 12);
-            this.buttonHelp_KAH.Name = "buttonHelp_KAH";
-            this.buttonHelp_KAH.Size = new System.Drawing.Size(107, 70);
-            this.buttonHelp_KAH.TabIndex = 2;
-            this.buttonHelp_KAH.UseVisualStyleBackColor = true;
-            this.buttonHelp_KAH.Click += new System.EventHandler(this.buttonHelp_KAH_Click);
-            this.buttonHelp_KAH.MouseEnter += new System.EventHandler(this.buttonHelp_KAH_Click_MouseEnter);
-            // 
-            // buttonOpenFile
-            // 
-            this.buttonOpenFile.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonOpenFile.Image = global::Tyuiu.KalimullinaAH.Sprint6.Task6.V24.Properties.Resources.folder_page;
-            this.buttonOpenFile.Location = new System.Drawing.Point(12, 12);
-            this.buttonOpenFile.Name = "buttonOpenFile";
-            this.buttonOpenFile.Size = new System.Drawing.Size(107, 70);
-            this.buttonOpenFile.TabIndex = 0;
-            this.toolTipTask_KAH.SetToolTip(this.buttonOpenFile, "Открыть файл\r\nВыберите нужный файл для обработки\r\n");
-            this.buttonOpenFile.UseVisualStyleBackColor = true;
-            this.buttonOpenFile.Click += new System.EventHandler(this.buttonOpenFile_KAH_Click);
-            this.buttonOpenFile.MouseEnter += new System.EventHandler(this.buttonOpenFile_KAH_Click_MouseEnter);
-            // 
-            // buttonDone_KAH
-            // 
-            this.buttonDone_KAH.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonDone_KAH.Enabled = false;
-            this.buttonDone_KAH.Image = global::Tyuiu.KalimullinaAH.Sprint6.Task6.V24.Properties.Resources.page_white_go;
-            this.buttonDone_KAH.Location = new System.Drawing.Point(141, 12);
-            this.buttonDone_KAH.Name = "buttonDone_KAH";
-            this.buttonDone_KAH.Size = new System.Drawing.Size(107, 70);
-            this.buttonDone_KAH.TabIndex = 0;
-            this.toolTipTask_KAH.SetToolTip(this.buttonDone_KAH, "Производит поиск в файле вхождений первое слово каждой строки и конкатенирует стр" +
-        "оки в которых находятся эти символы \r\n");
-            this.buttonDone_KAH.UseVisualStyleBackColor = true;
-            this.buttonDone_KAH.Click += new System.EventHandler(this.buttonDone_KAH_Click);
-            this.buttonDone_KAH.MouseEnter += new System.EventHandler(this.buttonDone_KAH_Click_MouseEnter);
             // 
             // splitter1
             // 
